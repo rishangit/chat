@@ -1,35 +1,11 @@
 import React from 'react';
 import { Chat, HeroCard } from "@progress/kendo-react-conversational-ui";
 import { Calendar } from "@progress/kendo-react-dateinputs";
-import { DirectLine } from "botframework-directlinejs";
 import AdaptiveCards from "adaptivecards";
 import '@progress/kendo-theme-default/dist/all.css';
-import { Route, useParams } from "react-router-dom";
 
 
-
-
-const user = {
-  id: "1",
-  name: "John",
-};
-
-
-const ChatBox = (props) => {
-  debugger
-  console.log('match.params.id',props);
-  let { id, name , avatar } = useParams();
-// console.log('id', id);
-const client = new DirectLine({
-  secret: id,
-});
-
-const bot = {
-  id: "0",
-  name,
-  avatarUrl:unescape(avatar),
-};
-
+const ChatBox = ({client,bot, user}) => {
   const [messages, setMessages] = React.useState([]);
   React.useEffect(() => {
     client.activity$.subscribe((activity) => onResponse(activity));
