@@ -1,0 +1,142 @@
+/* @import url(./demo.css); */
+
+/* @import url('./dsn001a_sesh.css'); */
+
+
+body, #description h1 { font-family:Courier, 'Courier New', color:#000}
+body, #wrapper {width:830px;height:100%;margin:0 auto;font-family:Courier, 'Courier New';position:relative}
+
+#headerdiv{
+  display: none !important;
+}
+
+#col1, #col2{
+  width: calc(50% - 30px) !important;
+  width: -webkit-calc(50% - 30px) !important;
+}
+#col1{
+  padding-right: 30px;
+  float: left;
+  box-sizing: border-box;
+}
+#col2{
+  padding-left: 30px;
+  float: left;
+  box-sizing: border-box;
+}
+
+
+span, label {
+  display: block !important;
+  margin-top: 18px;
+  font-family: "Johnnie Walker Serif Book",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  display: block;
+  position: relative;
+  color: #000 !important;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  height: 56px;
+  padding: 0 20px;
+  margin-top: 8px;
+  font-family: "Johnnie Walker Serif Book",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.regular {
+  font: normal 12px "Johnnie Walker Serif Book",Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #000;
+}
+
+select{
+
+  width: 100%;
+  height: 56px;
+  margin-top: 8px;
+  padding: 0 20px;
+  border: 1px solid #d8d8d8;
+  font-family: "Johnnie Walker Serif Book",Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  background-image: url("data:image/svg+xml;utf8,<svg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L5 5L9 1' stroke='black' stroke-width='2'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 22px);
+  background-position-y: 25px;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+  background-color: #ffffff;
+}
+
+#Calendar1{
+  width: 100%;
+}
+
+#Calendar1 table.col, table.cal td{
+  background-color: transparent !important;
+  border: none;
+}
+
+.cal, .cal .cal_title, .cal .cal_title td{
+  border: none;
+  background-color: transparent !important;
+}
+.cal .cal_title{
+
+}
+
+#Calendar1 tr{
+  background-color: transparent;
+}
+#Calendar1 .cal_dayheader{
+background-color: transparent;
+color: #757575;
+line-height: 16px;
+font-size: 10px;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+padding-bottom: 16px;
+font-weight: 400;
+}
+
+
+#Calendar1 .cal_today,#Calendar1 .cal_day, #Calendar1 .cal_weekend , #Calendar1 .cal_notavail{
+width: 32px;
+height: 32px;
+}
+
+#Calendar1 .cal_today{
+  border: 1px solid #D8D8D8;
+  box-sizing: border-box;
+}
+
+.cal a
+{
+text-decoration:none;
+width:100%;
+height: 100%;
+float:left;
+font-weight:bold;
+display: flex;
+justify-content: center;
+align-items: center;
+}
