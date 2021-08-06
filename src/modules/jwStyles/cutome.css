@@ -3,7 +3,10 @@
 /* @import url('./dsn001a_sesh.css'); */
 
 
-body, #description h1 { font-family:Courier, 'Courier New', color:#000}
+
+
+
+body, #description h1 { background-color: #fcf5df; font-family:Courier, 'Courier New', color:#000}
 body, #wrapper {width:830px;height:100%;margin:0 auto;font-family:Courier, 'Courier New';position:relative}
 
 #headerdiv{
